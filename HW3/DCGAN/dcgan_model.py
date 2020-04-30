@@ -25,7 +25,7 @@ class GAN(object):
         self.batch_size = batch_size
         self.model_name = "GAN"     # name for checkpoint
 
-        if dataset_name == 'mnist' or dataset_name == 'fashion-mnist': # fix
+        if dataset_name == 'cifar-10' or dataset_name == 'cifar-10':
             # parameters
             self.input_height = 28
             self.input_width = 28
@@ -43,7 +43,7 @@ class GAN(object):
             self.sample_num = 64  # number of generated images to be saved
 
             # load mnist
-            self.data_X, self.data_y = load_mnist(self.dataset_name)
+            self.data_X, self.data_y = load_cifar10(self.dataset_name)
 
             # get number of batches for a single epoch
             self.num_batches = len(self.data_X) // self.batch_size # 700 = 70000 / 100
@@ -134,8 +134,6 @@ class GAN(object):
             return out, out_logit, net
 
     def generator(self, z, is_training=True, reuse=False):
-        # Network Architecture is exactly same as in infoGAN (https://arxiv.org/abs/1606.03657)
-        # Architecture : FC1024_BR-FC7x7x128_BR-(64)4dc2s_BR-(1)4dc2s_S
         with tf.variable_scope("generator", reuse=reuse):
 
             if self.dataset_name == 'cifar10':
