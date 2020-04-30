@@ -5,7 +5,6 @@ from utils import show_all_variables
 import tensorflow as tf
 import argparse
 
-"""parsing and configuration"""
 def parse_args():
     desc = "Tensorflow implementation of GAN collections"
     parser = argparse.ArgumentParser(description=desc)
