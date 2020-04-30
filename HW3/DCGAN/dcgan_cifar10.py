@@ -1,3 +1,7 @@
+#Namita Vagdevi Cherukuru
+#HW 3: Deep Learning (CPSC 8810)
+#ncheruk@clemson.edu
+
 import os
 
 from utils import show_all_variables
