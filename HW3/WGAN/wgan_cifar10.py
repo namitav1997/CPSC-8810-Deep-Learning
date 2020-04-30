@@ -1,5 +1,5 @@
 #Namita Vagdevi Cherukuru
-#HW 2: Deep Learning (CPSC 8810)
+#HW 3: Deep Learning (CPSC 8810)
 #ncheruk@clemson.edu
 
 import os, sys
