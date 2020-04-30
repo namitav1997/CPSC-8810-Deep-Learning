@@ -1,10 +1,13 @@
+#Namita Vagdevi Cherukuru
+#HW 2: Deep Learning (CPSC 8810)
+#ncheruk@clemson.edu
+
 import os, sys
 sys.path.append(os.getcwd())
 
 import time
 import tflib as lib
 import tflib.save_images
-import tflib.mnist
 import tflib.cifar10
 import tflib.plot
 import tflib.inception_score
