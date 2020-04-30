@@ -145,7 +145,7 @@ def get_inference_op(cells, char_input, embedding, seq_len, sm_bias, sm_weight, 
 
 
 generators = {
-    "Generator_GRU_CL_VL_TH": Generator_GRU_CL_VL_TH,
+    "Generator_GRU_CL_VL": Generator_GRU_CL_VL_TH,
 }
 
 discriminators = {
