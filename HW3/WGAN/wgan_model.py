@@ -1,3 +1,7 @@
+#Namita Vagdevi Cherukuru
+#HW 2: Deep Learning (CPSC 8810)
+#ncheruk@clemson.edu
+
 import tensorflow as tf
 from tensorflow.contrib.rnn import GRUCell
 
