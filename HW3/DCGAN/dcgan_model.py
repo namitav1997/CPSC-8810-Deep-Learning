@@ -1,4 +1,8 @@
-from __future__ import division
+
+#Namita Vagdevi Cherukuru
+#HW 2: Deep Learning (CPSC 8810)
+#ncheruk@clemson.edu
+
 import os
 import time
 import tensorflow as tf
@@ -7,8 +11,7 @@ import numpy as np
 from ops import *
 from utils import *
 
-#from datetime import datetime
-#import matplotlib.pyplot as plt
+
 
 
 class GAN(object):
